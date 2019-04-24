@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/font-awesome/css/font-awesome.css);
 
 
+body{
+    background: #fbfbfb !important;
+    font-family: 'Roboto Slab' !important;
+}
 .padding-0{
     padding:0;
 }

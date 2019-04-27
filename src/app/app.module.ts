@@ -15,7 +15,7 @@ import { EmbedVideo } from 'ngx-embed-video';
 const appRoutes:Routes=[
   { path: '', component: AppLayoutComponent,
   children: [
-    { path: 'playlist', component: VideoListComponent },
+    { path: '', component: VideoListComponent },
     { path: 'watch_video', component: VideoDetailComponent}
     ]
   },

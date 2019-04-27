@@ -1,10 +1,10 @@
 <div>
   <a routerLink='/playlist'><i class="fa fa-chevron-left" aria-hidden="true"></i> BACK TO LIBRARY</a>
 </div>
-<div class="row">
+<div class="row" *ngIf="videoUrl">
   <div class="col-md-6" [innerHtml]="videoUrl">
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6" *ngIf="detail">
     <h2>{{detail.title}}</h2>
     <p>{{detail.description}}</p>
     <div class="col-md-6"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>{{video.likes}} Likes</div>

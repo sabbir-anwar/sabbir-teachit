@@ -1,3 +1,24 @@
-<p>
-  video-list works!
-</p>
+<div class="row">
+  <div class="col-md-3 video-block" *ngFor="let video of videos">
+    <a [attr.href]="video.url">
+      <img src="" alt="" class="img-fluid">
+      <h3>{{video.title}}</h3>
+      <p>{{video.description}}</p>
+    </a>
+    <div class="row">
+      <div class="col-md-6"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>{{video.likes}} Likes</div>
+      <div class="col-md-6"><i class="fa fa-comments" aria-hidden="true"></i></div>
+    </div>
+  </div>
+  <div class="col-md-3 video-block">
+    <a routerLink='/watch_video'>
+      <img src="assets/img/css_logo.png" class="img-fluid" alt="">
+      <h3>Lorem Ipsum</h3>
+      <p>jha jv ajdkg jdvgsd vjdv lakjs vlskdjv bajsdbv sjdvba</p>
+    </a>
+    <div class="row">
+      <div class="col-md-6"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>30 Likes</div>
+      <div class="col-md-6"><i class="fa fa-comments" aria-hidden="true">12 Comments</i></div>
+    </div>
+  </div>
+</div>

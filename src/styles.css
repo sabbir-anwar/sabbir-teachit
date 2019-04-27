@@ -6,6 +6,17 @@ body{
     background: #fbfbfb !important;
     font-family: 'Roboto Slab' !important;
 }
+a { 
+    color: #000 !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none !important;
+    outline: none !important;
+}
 .padding-0{
     padding:0;
 }

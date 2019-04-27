@@ -1,0 +1,11 @@
+.video-block{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px #c1c1c1;
+    border: 1px solid #000;
+    margin-top: 15px;
+}
+
+.video-block img{
+    padding: 15px;
+}

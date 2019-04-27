@@ -10,11 +10,11 @@ import {getHost} from '../config';
 })
 export class VideoListComponent implements OnInit {
   videos = null;
-  host=null;
   
   constructor(private http:HttpClient,private router:Router) { }
 
   ngOnInit() {
+    this.init();
   }
 
   init()
@@ -32,5 +32,8 @@ export class VideoListComponent implements OnInit {
        }
      })  
   } 
-
+  seeDetailView(videoDetail){
+    let id=videoDetail.url;   
+    this.router.navigate(["/watch_video",id]);
+  }
 }

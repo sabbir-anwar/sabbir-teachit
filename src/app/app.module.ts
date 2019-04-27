@@ -10,6 +10,7 @@ import { SiteHeaderComponent } from './_layout/site-header/site-header.component
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-list/video-detail/video-detail.component';
 import { LoginComponent } from './login/login.component';
+import { EmbedVideo } from 'ngx-embed-video';
 
 const appRoutes:Routes=[
   { path: '', component: AppLayoutComponent,
@@ -36,7 +37,8 @@ const appRoutes:Routes=[
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    EmbedVideo.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
